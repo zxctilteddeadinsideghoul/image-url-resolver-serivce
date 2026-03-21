@@ -8,7 +8,7 @@ RUN go mod download
 
 COPY cmd .
 
-RUN go build -o image-resolver cmd/main.go
+RUN go build -o image-resolver ./cmd
 
 # Runtime stage
 FROM alpine:latest
